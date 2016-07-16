@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-App="myApp">
+  <head>
+  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+  </head>
+
+  
+
+ <body ng-controller="mainCtrl">
+  <h1>User Profile</h1>
+   <div class="box">
+     
+   
+     <button ng-click="clickHandler()">Show Form</button>
+
+     <form ng-show="showForm">
+       <h4>Name:</h4><input type="text" name="name"><br>
+       <h4>Bio:</h4> <input type="text" name="bio"><br>
+       <h4>Favorite Books:</h4><input type="text" name="books"><br>
+       <h4>Favorite JS Libraries:</h4><input type="text" name="library"><br>
+       <h6>Comments</h6>
+       <textarea rows="10" cols="120"></textarea>
+       <input ng-click="appendUserInfo" type="submit" value="Submit">
+     </form>
+   </div>
+ </body>
+
+
+    
+</html>
